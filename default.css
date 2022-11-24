@@ -1,60 +1,56 @@
- @font-face {
-     font-family: "h";
-     src: url("./iosevka.ttf") format("embedded-opentype"),
-         url("./iosevka.ttf") format("woff2"),
-         url("./iosevka.ttf") format("woff"),
-         url("./iosevka.ttf") format("truetype"),
-         url("./iosevka.ttf") format("svg");
- }
+@font-face {
+    font-family: "h";
+    src: url("./iosevka.ttf") format("embedded-opentype"),
+    url("./iosevka.ttf") format("woff2"),
+    url("./iosevka.ttf") format("woff"),
+    url("./iosevka.ttf") format("truetype"),
+    url("./iosevka.ttf") format("svg");
+}
 
- @media (min-width:1000px) and (orientation:landscape) {
-     .b {
-         font-family: h;
-         background-color: black;
-         font-size: 300%;
-         text-align: center;
-         color: white;
-     }
+.b {
+    font-family: h, monospace;
+    background-color: black;
+    font-size: 150%;
+    text-align: center;
+    color: white;
+}
 
-     button {
-         font-size: 100%;
-         background-color: black;
-         color: rgb(85, 85, 199);
-         border-radius: 0px;
-         box-shadow: 0px;
-         background: none;
-         border: none;
-         padding: 0;
-         font-family: h;
-         -moz-user-select: text;
-         -khtml-user-select: text;
-         -webkit-user-select: text;
-         -ms-user-select: text;
-         user-select: text;
-     }
+button {
+    font-size: 100%;
+    color: rgb(85, 85, 199);
+    border-radius: 0px;
+    /*box-shadow: 0px;*/
+    background-color: black;
+    border: none;
+    padding: 0;
+    font-family: h, monospace;
+}
 
- }
+a {
+    text-decoration: none;
+}
 
- @media (min-height:0px) {
-     .b {
+.links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
-         font-family: h;
-         background-color: black;
-         font-size: 150%;
-         text-align: center;
-         color: white;
-     }
+.links > div {
+    flex-basis: 50%;
+    padding: 0.1em 0.25em;
+}
 
-     button {
-         font-size: 100%;
-         background-color: black;
-         color: rgb(85, 85, 199);
-         border-radius: 0px;
-         box-shadow: 0px;
-         background: none;
-         border: none;
-         padding: 0;
-         font-family: h;
-     }
+.links :first-child {
+    text-align: right;
+}
 
- }
+.links :last-child {
+    text-align: left;
+}
+
+@media (orientation:portrait) {
+    .b {
+        font-size: 300%;
+    }
+}
