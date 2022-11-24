@@ -24,6 +24,11 @@ button {
     border: none;
     padding: 0;
     font-family: h, monospace;
+    -moz-user-select: text;
+    -khtml-user-select: text;
+    -webkit-user-select: text;
+    -ms-user-select: text;
+    user-select: text;
 }
 
 a {
