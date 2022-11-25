@@ -49,6 +49,9 @@ a {
 .links :first-child {
     text-align: right;
 }
+.links :nth-child(2) {
+text-align: center;
+}
 
 .links :last-child {
     text-align: left;
