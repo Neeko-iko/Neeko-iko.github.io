@@ -1,26 +1,45 @@
 @font-face {
     font-family: "h";
-    src: url("./iosevka.ttf") format("embedded-opentype"),
-    url("./iosevka.ttf") format("woff2"),
-    url("./iosevka.ttf") format("woff"),
-    url("./iosevka.ttf") format("truetype"),
-    url("./iosevka.ttf") format("svg");
+    src: url("media/iosevka.ttf") format("embedded-opentype"),
+        url("media/iosevka.ttf") format("woff2"),
+        url("media/iosevka.ttf") format("woff"),
+        url("media/iosevka.ttf") format("truetype"),
+        url("media/iosevka.ttf") format("svg");
 }
 
-.b {
+body {
     font-family: h, monospace;
     background-color: black;
-    font-size: 150%;
-    text-align: center;
     color: white;
+    font-size: 150%;
+    
+}
+/*lol i moved all of b to body lolllll lmaooooo*/
+.b { 
+    text-align: center;
 }
 
+.row {
+    display: flex;
+    flex-direction: row;
+    box-sizing:content-box;
+    flex-shrink: 1;
+}
+.reverse{flex-direction: row-reverse;}
+.column{  display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1em;
+    text-align: center;
+    flex:50%;
+    flex-shrink: 1;
+  }
 button {
     font-size: 100%;
-    color: rgb(85, 85, 199);
+   
     border-radius: 0px;
-    /*box-shadow: 0px;*/
     background-color: black;
+    cursor:pointer; 
     border: none;
     padding: 0;
     font-family: h, monospace;
@@ -41,7 +60,7 @@ a {
     align-items: center;
 }
 
-.links > div {
+.links>div {
     flex-basis: 50%;
     padding: 0.1em 0.25em;
 }
@@ -49,8 +68,9 @@ a {
 .links :first-child {
     text-align: right;
 }
+
 .links :nth-child(2) {
-text-align: center;
+    text-align: center;
 }
 
 .links :last-child {
@@ -60,9 +80,10 @@ text-align: center;
 @media (orientation:portrait) {
     .b {
         font-size: 200%;
-        padding-bottom:10%;
+        padding-bottom: 10%;
     }
-    .links > div {
+
+    .links>div {
         padding: 0.75em 0.55em;
     }
 }

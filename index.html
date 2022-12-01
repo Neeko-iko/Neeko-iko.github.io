@@ -6,18 +6,20 @@ and while listening to jerma the entire time VSC was open-->
     <title>neekos page</title>
 <base href="/">
 <link rel="stylesheet" href="default.css">
-
+<link rel="icon" href="media/neekobow.png">
 <meta content="nothing is here" property="og:title" />
 </head>
 <body class="b">
-    <p style="font-size:250%;" id="title">hi im Neeko N. iko<br></p>
-        <br>
+    <div style="font-size:250%;" id="title">
+    <h>hi im Neeko </h><button onclick="readn()" style="color: whitesmoke;">N. </button><h> iko</h> 
+    </div>
+    <br><br>
         <div class="links">
             <div>
                 <a href="/pronouns" style="text-decoration: none;color:rgb(109, 118, 254);" onmouseover="titlec('they/them')">pronouns</a>
             </div>
             <div>
-                <button onclick="discord()" style="cursor:pointer;" onmouseover="titlec('discord')">Neeko#7373</button>
+                <button onclick="discord()" style="color: rgb(85, 85, 199);" onmouseover="titlec('discord')">Neeko#7373</button>
             </div>
         </div>
         <div class="links">
@@ -34,7 +36,7 @@ and while listening to jerma the entire time VSC was open-->
                 <a href="https://github.com/neeko-iko" style="text-decoration: none;color:white;" onmouseover="titlec('programming')">github</a>
             </div>
             <div>
-                <a href="https://github.com/Neeko-iko/JavierLauncher" style="text-decoration: none;color:rgb(161, 102, 189);" onmouseover="titlec('mc server launcher')">javier</a>
+                <a href="/javier" style="text-decoration: none;color:rgb(161, 102, 189);" onmouseover="titlec('mc server launcher')">javier</a>
             </div>
         </div>
         <br><br><a href="https://github.com/Neeko-iko/Neeko-iko.github.io"
@@ -44,9 +46,9 @@ and while listening to jerma the entire time VSC was open-->
     <script>
         let the;
         function titlec(string = ""){
-            document.getElementById("title").innerHTML = string;
+            document.getElementById("title").innerHTML = string
             clearTimeout(the)
-            the = setTimeout(what, 1000);
+            the = setTimeout(what, 1000)
             
         }
         function what(){
@@ -55,7 +57,15 @@ and while listening to jerma the entire time VSC was open-->
         
         function discord() {
             navigator.clipboard.writeText("Neeko#7373")
-            titlec("copied to clipboard");
+            titlec("copied to clipboard")
+        }
+        function readn(){
+            fetch("n")
+            .then((response) => response.text())
+            .then((text) => standsfor(text.split(/\r?\n/)))}
+        function standsfor(n){
+            n = n[Math.floor(Math.random()*n.length)]
+            document.getElementById("title").innerHTML = "the N. stands for " + n
         }
     </script>
     </body>
