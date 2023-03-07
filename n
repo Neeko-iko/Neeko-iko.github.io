@@ -11,11 +11,10 @@ Nano
 Nyan
 Neko
 Neurotypical
-Neurodivergant
+Neurodivergent
 N
 Needy
 Never
-Next
 Nether
 Nest
 Normal
@@ -24,3 +23,5 @@ Nicotine
 Nasty
 Name
 Nincompoop
+Nose
+Noodles
