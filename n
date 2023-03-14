@@ -25,3 +25,6 @@ Name
 Nincompoop
 Nose
 Noodles
+Nice
+Nickel
+Neat
