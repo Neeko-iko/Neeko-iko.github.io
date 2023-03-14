@@ -55,7 +55,7 @@ a {
 }
 
 .socials{
-  flex-basis: 12%;
+  flex-basis: 1%;
 }
 
 .links {
@@ -69,7 +69,7 @@ a {
     padding: 0.1em, 0.25em;
 }
 .socials>.links>div{ 
-  flex-basis: 10%;
+  flex-basis: 15%;
 }
 .links :first-child {
     text-align: right;
