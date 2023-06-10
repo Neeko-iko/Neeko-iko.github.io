@@ -15,8 +15,8 @@ and while listening to jerma the entire time VSC was open-->
 </head>
 
 <body class="b">
-  <div style="font-size:250%;" id="title">
-    <h>hi im Neeko </h><button onclick="readn()" style="color: whitesmoke;">N.</button>
+  <div style="font-size:250%; font-weight: bolder;" id="title">
+    <h>hi im Neeko </h><button onclick="readn()" style="color: whitesmoke; font-weight: bold;">N.</button>
     <h> iko</h>
   </div>
   <br><br>
@@ -39,12 +39,17 @@ and while listening to jerma the entire time VSC was open-->
     </div>
   </div>
   <a href="./socials" style="color: white;" onmouseover="titlec('extra socials')">-===...===-</a><br>
-  <div class="links">
-    <div>
-      <a href="https://github.com/neeko-iko" style="color:white;" onmouseover="titlec('programming')">github</a>
-    </div>
-    <div>
-      <a href="./javier" style="color:rgb(161, 102, 189);" onmouseover="titlec('mc server launcher')">javier</a>
+  <div class="socials">
+    <div class="links"> <!--
+      <div>
+        <a href="" style="color:rgb(208, 228, 255)">tobokeen</a>
+      </div>  implement this when tobokeen rewrite is done-->
+      <div>
+        <a href="https://github.com/neeko-iko" style="color:white;" onmouseover="titlec('programming')">github</a>
+      </div>
+      <div>
+        <a href="./javier" style="color:rgb(161, 102, 189);" onmouseover="titlec('mc server launcher')">javier</a>
+      </div>
     </div>
   </div>
   <br>
@@ -83,7 +88,6 @@ and while listening to jerma the entire time VSC was open-->
         .then((text) => standsfor(text.split(/\r?\n/)))
     }
     function standsfor(n) {
-      console.log(n)
       n = n[Math.floor(Math.random() * n.length)]
       document.getElementById("title").innerHTML = 'the <button onclick="readn()" style="color: whitesmoke;">N. </button> stands for ' + n
     }
